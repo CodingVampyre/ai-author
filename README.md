@@ -1,2 +1,3 @@
-# rainer-mit-ai-trainer
+# AI Author
+Command line tool to generate sentences based on other sentences
  
