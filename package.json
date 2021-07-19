@@ -1,0 +1,19 @@
+{
+	"name": "ai-author",
+	"version": "1.0.0",
+	"description": "AI to generate texts based on an array of sentences",
+	"main": "src/execute.js",
+	"scripts": {
+		"train": "node src/train.js -t ./data/test-data.json -i 1000 -o ./net.json",
+		"execute": "node src/execute.js -n ./net.json"
+	},
+	"bin": {
+		"ai-author": "src/train.js"
+	},
+	"keywords": [],
+	"author": "Tobias Kavšek",
+	"license": "MIT",
+	"dependencies": {
+		"brain.js": "2.0.0-beta.2"
+	}
+}
