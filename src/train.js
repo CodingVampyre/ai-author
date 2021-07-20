@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const Brain = require('brain.js');
 const fs = require('fs');
 
@@ -13,7 +15,7 @@ Flags:
 const net = new Brain.recurrent.LSTM();
 
 let iterations = 1000;
-let output = './out.json';
+let output = 'out';
 let trainingDataPath;
 for (const [index, flag] of process.argv.entries()) {
 	if (flag === '-i') { iterations = process.argv[index+1]; }
@@ -37,4 +39,4 @@ net.train(trainingData, {
 });
 console.log('done!');
 
-fs.writeFileSync(output, JSON.stringify(net.toJSON()));
+fs.writeFileSync(`./${output}.json`, JSON.stringify(net.toJSON()));

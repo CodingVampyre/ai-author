@@ -1,14 +1,15 @@
 {
 	"name": "ai-author",
-	"version": "1.0.0",
+	"version": "1.0.4",
 	"description": "AI to generate texts based on an array of sentences",
-	"main": "src/execute.js",
+	"main": "src/train.js",
 	"scripts": {
-		"train": "node src/train.js -t ./data/test-data.json -i 1000 -o ./net.json",
-		"execute": "node src/execute.js -n ./net.json"
+		"train": "node src/train.js -t ./data/test-data.json -i 100",
+		"execute": "node src/execute.js -n ./out.json"
 	},
 	"bin": {
-		"ai-author": "src/train.js"
+		"ai-author": "./src/train.js",
+		"ai-author-cli": "./src/execute.js"
 	},
 	"keywords": [],
 	"author": "Tobias Kavšek",
