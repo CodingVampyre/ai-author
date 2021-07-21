@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const Brain = require('brain.js');
 const fs = require('fs');
 

@@ -1,6 +1,6 @@
 {
 	"name": "ai-author",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "AI to generate texts based on an array of sentences",
 	"main": "src/train.js",
 	"scripts": {
